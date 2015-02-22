@@ -19,10 +19,46 @@ function convertToSlug(Text)
  * List of all municipalities
  */
 
-exports.getMunicipaly = function(req, res) {
+exports.getMunicipality = function(req, res) {
   Municipality.find().select().exec(function(err, municipalities) {
     if (!err && municipalities!==null){
       return res.jsonp(municipalities);
+    } else {
+      res.status(400);
+      return res.send(err);
+    }
+  });
+};
+
+/**
+ * GET /api/municipality/:slug
+ * List of all municipalities
+ * TODO
+ */
+
+
+
+/**
+ * GET /api/municipality/boundary
+ * List of all municipalities
+ */
+
+exports.getMunicipalyBoundary = function(req, res) {
+  Municipality.find({boundary: {'$ne': null }}).select('boundary name department').exec(function(err, municipalities) {
+    if (!err && municipalities!==null){
+      var featuresMunicipalities =[];
+      _.forEach(municipalities, function(municipality, key) {        
+          var geojsonFeature = {
+              'type': 'Feature',
+              'properties': {
+                  'name': municipality.name,
+                  'department': municipality.department
+              }
+          };
+          geojsonFeature.geometry = municipality.boundary;
+          featuresMunicipalities.push(geojsonFeature);
+      });
+      return res.jsonp(featuresMunicipalities);
     } else {
       res.status(400);
       return res.send(err);
@@ -35,7 +71,7 @@ exports.getMunicipaly = function(req, res) {
  * Add a municipality
  */
 
-exports.postMunicipaly = function(req, res) {
+exports.postMunicipality = function(req, res) {
 
   var municipality = new Municipality({
     name: req.body.name,
@@ -58,13 +94,14 @@ exports.postMunicipaly = function(req, res) {
  * Trigger a manual import of the data into the DB
  */
 exports.importMunicipaly = function (req,res){
-  var municipalities = require('../import/municiopios_con_actividad_narcoparamilitar_2013.json');
+  var municipalities = require('../import/municiopios_con_actividad_narcoparamilitar_2013_original.json');
 
   async.each(municipalities, function(municipality, callback) {
     var municipalityToSave = new Municipality({
       name: municipality.MUNICIPIO,
       department: municipality.DEPARTAMENTO,
-      slug: convertToSlug(municipality.MUNICIPIO+'_'+municipality.DEPARTAMENTO)
+      slug: convertToSlug(municipality.MUNICIPIO+'_'+municipality.DEPARTAMENTO),
+      osm_query:municipality.OSM_QUERY
     });
     municipalityToSave.save(function(err) {
       if (err) { 
@@ -85,7 +122,17 @@ exports.importMunicipaly = function (req,res){
       }
   });
 };
-
+//Nominatim API returns a boundingbox property of the form:
+//[south Latitude, north Latitude, west Longitude, east Longitude]
+function convertBoundingBoxToGeoJSON(boundingBox){
+  var southLatitude = boundingBox[0];
+  var northLatitude = boundingBox[1];
+  var westLongitude = boundingBox[2];
+  var eastLongitude = boundingBox[3];
+  var geoJson = [[[[westLongitude,southLatitude],[westLongitude,northLatitude],[eastLongitude,northLatitude],[eastLongitude,southLatitude],[westLongitude,southLatitude]]]
+];
+  return geoJson;
+}
 /**
  * GET /enrich
  * For each municipality, get boundary + exact location from OSM nominatim api
@@ -94,16 +141,28 @@ exports.enrichMunicipaly = function (req,res){
   Municipality.find().select().exec(function(err, municipalities) {
     if (!err && municipalities!==null){
       async.each(municipalities, function(municipality, callback) {
-        var query = municipality.name + ',' + municipality.department;     
+        var query;
+        if (!municipality.osm_query){
+          query = municipality.name + ',' + municipality.department;
+        } else {
+          query = municipality.osm_query;
+        }
+
         var options = {
-          url: 'http://nominatim.openstreetmap.org/search?q='+query+'&format=json&email=gagnonje@gmail.com&polygon_geojson=1&countrycodes=CO',
+          url: 'http://nominatim.openstreetmap.org/search?q='+query+'&format=json&email=gagnonje@gmail.com&polygon_geojson=1&countrycodes=CO&limit=11',
           json: true
         };
+        console.log(options.url);
         request(options, function (error, response, body) {
           if (!error && response.statusCode == 200) {
+
+            if (_.isEmpty(body)){
+              console.log('response for '+query+' was empty');
+              return callback();
+            }
             
             var filteredMunicipalityExactLocation = _.filter(body, function(osmResult) { 
-              if (osmResult.type==='town' || osmResult.type==='city' || osmResult.type==='village' || osmResult.type==='hamlet'){
+              if (osmResult.type==='town' || osmResult.type==='city' || osmResult.type==='village' || osmResult.type==='hamlet' || osmResult.type==='island'){
                 return 1;
               } else {
                 return 0;
@@ -137,8 +196,19 @@ exports.enrichMunicipaly = function (req,res){
                   coordinates:[parseFloat(filteredBoundary[0].lon),parseFloat(filteredBoundary[0].lat)]
                 };
               }
+            } else if (filteredMunicipalityExactLocation.length>=1 && filteredMunicipalityExactLocation[0].geojson){
+              municipality.boundary.type = filteredMunicipalityExactLocation[0].geojson.type;
+              municipality.boundary.coordinates = filteredMunicipalityExactLocation[0].geojson.coordinates;
+            } else if (filteredMunicipalityExactLocation.length>=1 && filteredMunicipalityExactLocation[0].boundingbox){
+              //Getting bounding boxes if we dont have boundary, less precise and squary, but at least it gives us a surface
+              console.log('Municipality: '+query+' does not have a boundary, using boundingBox instead');
+              municipality.boundary.type = filteredBoundary[0].geojson.type;
+              municipality.boundary.coordinates = filteredBoundary[0].geojson.coordinates;
             } else {
               console.log('Municipality: '+query+' does not have a boundary');
+              if (municipality.osm_query){
+                console.log('it was custom osm query');
+              }
             }
             municipality.save(function(err) {
               if (err) { 

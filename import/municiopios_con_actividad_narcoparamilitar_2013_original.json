@@ -73,7 +73,8 @@
   },
   {
     "DEPARTAMENTO":"Antioquia",
-    "MUNICIPIO":"Carolina del Príncipe"
+    "MUNICIPIO":"Carolina del Príncipe",
+    "OSM_QUERY": "Carolina,Antioquia"
   },
   {
     "DEPARTAMENTO":"Antioquia",
@@ -193,7 +194,8 @@
   },
   {
     "DEPARTAMENTO":"Antioquia",
-    "MUNICIPIO":"San Andrés de Cuerquia"
+    "MUNICIPIO":"San Andrés de Cuerquia",
+    "OSM_QUERY":"San Andrés,Antioquia"
   },
   {
     "DEPARTAMENTO":"Antioquia",
@@ -209,7 +211,8 @@
   },
   {
     "DEPARTAMENTO":"Antioquia",
-    "MUNICIPIO":"San Pedro de los Milagros"
+    "MUNICIPIO":"San Pedro de los Milagros",
+    "OSM_QUERY": "San Pedro,Antioquia"    
   },
   {
     "DEPARTAMENTO":"Antioquia",
@@ -361,7 +364,8 @@
   },
   {
     "DEPARTAMENTO":"Bolívar",
-    "MUNICIPIO":"Cartagena"
+    "MUNICIPIO":"Cartagena",
+    "OSM_QUERY": "Cartagena de Indias,Bolívar"
   },
   {
     "DEPARTAMENTO":"Bolívar",
@@ -373,11 +377,13 @@
   },
   {
     "DEPARTAMENTO":"Bolívar",
-    "MUNICIPIO":"Marialabaja"
+    "MUNICIPIO":"Marialabaja",
+    "OSM_QUERY": "Maria La Baja,Bolívar"
   },
   {
     "DEPARTAMENTO":"Bolívar",
-    "MUNICIPIO":"Mompós (Santa Cruz de)"
+    "MUNICIPIO":"Mompós (Santa Cruz de)",
+    "OSM_QUERY": "Santa Cruz de Mompós,Bolívar"
   },
   {
     "DEPARTAMENTO":"Bolívar",
@@ -397,7 +403,8 @@
   },
   {
     "DEPARTAMENTO":"Bolívar",
-    "MUNICIPIO":"Ríoviejo"
+    "MUNICIPIO":"Ríoviejo",
+    "OSM_QUERY": "Río viejo,Bolívar"
   },
   {
     "DEPARTAMENTO":"Bolívar",
@@ -517,7 +524,8 @@
   },
   {
     "DEPARTAMENTO":"Cauca",
-    "MUNICIPIO":"López de Micay"
+    "MUNICIPIO":"López de Micay",
+    "OSM_QUERY": "López,Cauca"
   },
   {
     "DEPARTAMENTO":"Cauca",
@@ -577,7 +585,8 @@
   },
   {
     "DEPARTAMENTO":"Cesar",
-    "MUNICIPIO":"Codazzi"
+    "MUNICIPIO":"Codazzi",
+    "OSM_QUERY":"Agustín Codazzi,Cesar"
   },
   {
     "DEPARTAMENTO":"Cesar",
@@ -657,19 +666,23 @@
   },
   {
     "DEPARTAMENTO":"Chocó",
-    "MUNICIPIO":"Bahía Solano"
+    "MUNICIPIO":"Bahía Solano",
+    "OSM_QUERY":"Bahía Solano (Mutis),Chocó"
   },
   {
     "DEPARTAMENTO":"Chocó",
-    "MUNICIPIO":"Bajo Baudó"
+    "MUNICIPIO":"Bajo Baudó",
+    "OSM_QUERY":"Bajo Baudó (Pizarro),Chocó"
   },
   {
     "DEPARTAMENTO":"Chocó",
-    "MUNICIPIO":"Belén de Bajirá"
+    "MUNICIPIO":"Belén de Bajirá",
+    "OSM_QUERY":"Mutatá,Antioquia"
   },
   {
     "DEPARTAMENTO":"Chocó",
-    "MUNICIPIO":"Cantón de San Pablo"
+    "MUNICIPIO":"Cantón de San Pablo",
+    "OSM_QUERY":"El Cantón del San Pablo"
   },
   {
     "DEPARTAMENTO":"Chocó",
@@ -685,7 +698,8 @@
   },
   {
     "DEPARTAMENTO":"Chocó",
-    "MUNICIPIO":"El Carmen del Darién"
+    "MUNICIPIO":"El Carmen del Darién",
+    "OSM_QUERY":"Carmen del Darién,Chocó"
   },
   {
     "DEPARTAMENTO":"Chocó",
@@ -697,7 +711,8 @@
   },
   {
     "DEPARTAMENTO":"Chocó",
-    "MUNICIPIO":"Litoral de San Juan"
+    "MUNICIPIO":"Litoral de San Juan",
+    "OSM_QUERY":"El Litoral del San Juan,Chocó"
   },
   {
     "DEPARTAMENTO":"Chocó",
@@ -705,7 +720,8 @@
   },
   {
     "DEPARTAMENTO":"Chocó",
-    "MUNICIPIO":"Medio Atrato"
+    "MUNICIPIO":"Medio Atrato",
+    "OSM_QUERY":"Medio Atrato (Beté)"
   },
   {
     "DEPARTAMENTO":"Chocó",
@@ -865,7 +881,8 @@
   },
   {
     "DEPARTAMENTO":"Distrito Capital",
-    "MUNICIPIO":"Bogotá"
+    "MUNICIPIO":"Bogotá",
+    "OSM_QUERY":"Bogotá,Colombia"
   },
   {
     "DEPARTAMENTO":"Guainía",
@@ -965,7 +982,8 @@
   },
   {
     "DEPARTAMENTO":"Magdalena",
-    "MUNICIPIO":"Nueva Granada"
+    "MUNICIPIO":"Nueva Granada",
+    "OSM_QUERY":"Nueva Granada (Granada),Magdalena"
   },
   {
     "DEPARTAMENTO":"Magdalena",
@@ -1001,7 +1019,8 @@
   },
   {
     "DEPARTAMENTO":"Meta",
-    "MUNICIPIO":"Cubarral"
+    "MUNICIPIO":"Cubarral",
+    "OSM_QUERY":"San Luis de Cubarral,Meta"
   },
   {
     "DEPARTAMENTO":"Meta",
@@ -1093,7 +1112,8 @@
   },
   {
     "DEPARTAMENTO":"Nariño",
-    "MUNICIPIO":"Francisco Pizarro"
+    "MUNICIPIO":"Francisco Pizarro",
+    "OSM_QUERY":"Francisco Pizarro (Salahonda),Nariño"
   },
   {
     "DEPARTAMENTO":"Nariño",
@@ -1173,7 +1193,8 @@
   },
   {
     "DEPARTAMENTO":"Nariño",
-    "MUNICIPIO":"Santa Bárbara"
+    "MUNICIPIO":"Santa Bárbara",
+    "OSM_QUERY":"El Charco,Nariño"
   },
   {
     "DEPARTAMENTO":"Nariño",
@@ -1257,7 +1278,8 @@
   },
   {
     "DEPARTAMENTO":"Putumayo",
-    "MUNICIPIO":"San Miguel"
+    "MUNICIPIO":"San Miguel",
+    "OSM_QUERY":"San Miguel (La Dorada)"
   },
   {
     "DEPARTAMENTO":"Putumayo",
@@ -1445,7 +1467,8 @@
   },
   {
     "DEPARTAMENTO":"Sucre",
-    "MUNICIPIO":"San Antonio de Palmito"
+    "MUNICIPIO":"San Antonio de Palmito",
+    "OSM_QUERY":"Palmito,Sucre"
   },
   {
     "DEPARTAMENTO":"Sucre",
@@ -1465,7 +1488,8 @@
   },
   {
     "DEPARTAMENTO":"Sucre",
-    "MUNICIPIO":"Santiago de Tolú"
+    "MUNICIPIO":"Santiago de Tolú",
+    "OSM_QUERY":"Tolú,Sucre"
   },
   {
     "DEPARTAMENTO":"Sucre",
@@ -1517,7 +1541,8 @@
   },
   {
     "DEPARTAMENTO":"Valle",
-    "MUNICIPIO":"Calima El Darién"
+    "MUNICIPIO":"Calima El Darién",
+    "OSM_QUERY":"Calima,Valle"
   },
   {
     "DEPARTAMENTO":"Valle",
@@ -1549,7 +1574,8 @@
   },
   {
     "DEPARTAMENTO":"Valle",
-    "MUNICIPIO":"Guadalajara de Buga"
+    "MUNICIPIO":"Guadalajara de Buga",
+    "OSM_QUERY":"Buga,Valle"
   },
   {
     "DEPARTAMENTO":"Valle",

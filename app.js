@@ -35,8 +35,10 @@ app.use('/', routes);
 
 app.get('/enrich', municipalityController.enrichMunicipaly);
 app.get('/import', municipalityController.importMunicipaly);
-app.get('/api/municipality', municipalityController.getMunicipaly);
-app.post('/api/municipality', municipalityController.postMunicipaly);
+app.get('/api/municipality', municipalityController.getMunicipality);
+app.get('/api/municipality/boundary', municipalityController.getMunicipalyBoundary);
+
+app.post('/api/municipality', municipalityController.postMunicipality);
 
 
 /// catch 404 and forwarding to error handler

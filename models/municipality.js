@@ -4,6 +4,7 @@ var municipalitySchema = new mongoose.Schema({
   name: { type: String, required: true },
   department: { type: String, required: true},
   slug:{ type:String, required:true, unique:true},
+  osm_query:{ type:String},
   //coordinates is [longitude, latitude]
   //this is for a specific point on the map of the city
   loc: {
