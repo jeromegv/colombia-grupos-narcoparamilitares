@@ -32,9 +32,21 @@ exports.getMunicipality = function(req, res) {
 
 /**
  * GET /api/municipality/:slug
- * List of all municipalities
- * TODO
+ * Get specific municipality
  */
+exports.getMunicipalitySlug = function(req, res) {
+  Municipality.find({ slug: req.params.slug }).select().exec(function(err, municipality) {
+    if (!err && municipality!==null && municipality.length>0){
+      return res.jsonp(municipality[0]);
+    } else if (!err && (municipality[0]==null || municipality.length<1)){
+      res.status(404);
+      return res.send('Not found');
+    } else {
+      res.status(400);
+      return res.send(err);
+    }
+  });
+};
 
 
 
