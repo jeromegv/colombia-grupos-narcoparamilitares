@@ -1,0 +1,838 @@
+[
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"Amalfi"
+  },
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"Angostura"
+  },
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"Apartadó"
+  },
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"Cisneros"
+  },
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"El Bagre"
+  },
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"Gómez Plata"
+  },
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"Medellín"
+  },
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"Puerto Berrío"
+  },
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"Remedios"
+  },
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"Santa Rosa de Osos"
+  },
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"Segovia"
+  },
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"Tarazá"
+  },
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"Yalí"
+  },
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"Yolombó"
+  },
+  {
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIOS":"Zaragoza"
+  },
+  {
+    "DEPARTAMENTO":"Atlántico",
+    "MUNICIPIOS":"Baranoa"
+  },
+  {
+    "DEPARTAMENTO":"Atlántico",
+    "MUNICIPIOS":"Barranquilla"
+  },
+  {
+    "DEPARTAMENTO":"Atlántico",
+    "MUNICIPIOS":"Galapa"
+  },
+  {
+    "DEPARTAMENTO":"Atlántico",
+    "MUNICIPIOS":"Juan de Acosta"
+  },
+  {
+    "DEPARTAMENTO":"Atlántico",
+    "MUNICIPIOS":"Malambo"
+  },
+  {
+    "DEPARTAMENTO":"Atlántico",
+    "MUNICIPIOS":"Puerto Colombia"
+  },
+  {
+    "DEPARTAMENTO":"Atlántico",
+    "MUNICIPIOS":"Sabanagrande"
+  },
+  {
+    "DEPARTAMENTO":"Atlántico",
+    "MUNICIPIOS":"Soledad"
+  },
+  {
+    "DEPARTAMENTO":"Bolívar",
+    "MUNICIPIOS":"Achí"
+  },
+  {
+    "DEPARTAMENTO":"Bolívar",
+    "MUNICIPIOS":"Arjona"
+  },
+  {
+    "DEPARTAMENTO":"Bolívar",
+    "MUNICIPIOS":"Carmen de Bolívar"
+  },
+  {
+    "DEPARTAMENTO":"Bolívar",
+    "MUNICIPIOS":"Cartagena"
+  },
+  {
+    "DEPARTAMENTO":"Bolívar",
+    "MUNICIPIOS":"San Pablo"
+  },
+  {
+    "DEPARTAMENTO":"Caldas",
+    "MUNICIPIOS":"Manizales"
+  },
+  {
+    "DEPARTAMENTO":"Caldas",
+    "MUNICIPIOS":"Viterbo"
+  },
+  {
+    "DEPARTAMENTO":"Caldas",
+    "MUNICIPIOS":"Riosucio"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Argelia"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Balboa"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Bolívar"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Corinto"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"El Tambo"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Guapi"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"La Vega"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"López de Micay"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Mercaderes"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Miranda"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Padilla"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Patía"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Popayán"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Puerto Tejada"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Puracé"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Santander de Quilichao"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Suárez"
+  },
+  {
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIOS":"Timbiquí"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"Aguachica"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"Astrea"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"Becerril"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"Bosconia"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"Codazzi"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"El Paso"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"Gamarra"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"La Gloria"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"La Jagua de Ibirico"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"La Paz"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"Pailitas"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"Río de Oro"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"San Alberto"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"San Diego"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"San Martín"
+  },
+  {
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIOS":"Valledupar"
+  },
+  {
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIOS":"Alto Baudó"
+  },
+  {
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIOS":"Bagadó"
+  },
+  {
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIOS":"Bahía Solano"
+  },
+  {
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIOS":"Bajo Baudó"
+  },
+  {
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIOS":"Cértegui"
+  },
+  {
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIOS":"El Carmen del Darién"
+  },
+  {
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIOS":"Istmina"
+  },
+  {
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIOS":"Juradó"
+  },
+  {
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIOS":"Litoral de San Juan"
+  },
+  {
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIOS":"Medio Baudó"
+  },
+  {
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIOS":"Nuquí"
+  },
+  {
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIOS":"Quibdó"
+  },
+  {
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIOS":"Riosucio"
+  },
+  {
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIOS":"Tadó"
+  },
+  {
+    "DEPARTAMENTO":"Córdoba",
+    "MUNICIPIOS":"Montelíbano"
+  },
+  {
+    "DEPARTAMENTO":"Córdoba",
+    "MUNICIPIOS":"Puerto Libertador"
+  },
+  {
+    "DEPARTAMENTO":"Cundinamarca",
+    "MUNICIPIOS":"Funza"
+  },
+  {
+    "DEPARTAMENTO":"Cundinamarca",
+    "MUNICIPIOS":"Soacha"
+  },
+  {
+    "DEPARTAMENTO":"Distrito Capital",
+    "MUNICIPIOS":"Bogotá"
+  },
+  {
+    "DEPARTAMENTO":"La Guajira",
+    "MUNICIPIOS":"Dibulla"
+  },
+  {
+    "DEPARTAMENTO":"La Guajira",
+    "MUNICIPIOS":"Maicao"
+  },
+  {
+    "DEPARTAMENTO":"La Guajira",
+    "MUNICIPIOS":"Manaure"
+  },
+  {
+    "DEPARTAMENTO":"La Guajira",
+    "MUNICIPIOS":"Riohacha"
+  },
+  {
+    "DEPARTAMENTO":"La Guajira",
+    "MUNICIPIOS":"Uribia"
+  },
+  {
+    "DEPARTAMENTO":"Magdalena",
+    "MUNICIPIOS":"Aracataca"
+  },
+  {
+    "DEPARTAMENTO":"Magdalena",
+    "MUNICIPIOS":"Ciénaga"
+  },
+  {
+    "DEPARTAMENTO":"Magdalena",
+    "MUNICIPIOS":"El Banco"
+  },
+  {
+    "DEPARTAMENTO":"Magdalena",
+    "MUNICIPIOS":"Fundación"
+  },
+  {
+    "DEPARTAMENTO":"Magdalena",
+    "MUNICIPIOS":"Santa Marta"
+  },
+  {
+    "DEPARTAMENTO":"Magdalena",
+    "MUNICIPIOS":"Zona Bananera"
+  },
+  {
+    "DEPARTAMENTO":"Meta",
+    "MUNICIPIOS":"Granada"
+  },
+  {
+    "DEPARTAMENTO":"Meta",
+    "MUNICIPIOS":"San Martín"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Barbacoas"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Cumbal"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Cumbitara"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"El Charco"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"El Rosario"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"El Tambo"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Francisco Pizarro"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Ipiales"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"La Florida"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"La Llanada"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"La Tola"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"La Unión"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Leiva"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Linares"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Los Andes"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Maguí Payán"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Mosquera"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Mallama"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Nariño"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Olaya Herrera"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Pasto"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Policarpa"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Providencia"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Roberto Payán"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Samaniego"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Santa Bárbara"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Santacruz"
+  },
+  {
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIOS":"Tumaco"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"Ábrego"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"Carcasí"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"Convención"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"Cúcuta"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"Durania"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"El Tarra"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"El Zulia"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"Hacarí"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"Los Patios"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"Ocaña"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"Pamplonita"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"Puerto Santander"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"San Calixto"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"Teorama"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"Tibú"
+  },
+  {
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIOS":"Villa del Rosario"
+  },
+  {
+    "DEPARTAMENTO":"Putumayo",
+    "MUNICIPIOS":"Puerto Asis"
+  },
+  {
+    "DEPARTAMENTO":"Putumayo",
+    "MUNICIPIOS":"Puerto Leguízamo"
+  },
+  {
+    "DEPARTAMENTO":"Putumayo",
+    "MUNICIPIOS":"San Miguel"
+  },
+  {
+    "DEPARTAMENTO":"Putumayo",
+    "MUNICIPIOS":"Sibundoy"
+  },
+  {
+    "DEPARTAMENTO":"Putumayo",
+    "MUNICIPIOS":"Valle del Guamuez"
+  },
+  {
+    "DEPARTAMENTO":"Quindío",
+    "MUNICIPIOS":"Armenia"
+  },
+  {
+    "DEPARTAMENTO":"Quindío",
+    "MUNICIPIOS":"Calarcá"
+  },
+  {
+    "DEPARTAMENTO":"Quindío",
+    "MUNICIPIOS":"Circasia"
+  },
+  {
+    "DEPARTAMENTO":"Quindío",
+    "MUNICIPIOS":"Filandia"
+  },
+  {
+    "DEPARTAMENTO":"Quindío",
+    "MUNICIPIOS":"La Tebaida"
+  },
+  {
+    "DEPARTAMENTO":"Quindío",
+    "MUNICIPIOS":"Montenegro"
+  },
+  {
+    "DEPARTAMENTO":"Quindío",
+    "MUNICIPIOS":"Quimbaya"
+  },
+  {
+    "DEPARTAMENTO":"Quindío",
+    "MUNICIPIOS":"Salento"
+  },
+  {
+    "DEPARTAMENTO":"Risaralda",
+    "MUNICIPIOS":"Apía"
+  },
+  {
+    "DEPARTAMENTO":"Risaralda",
+    "MUNICIPIOS":"Dosquebradas"
+  },
+  {
+    "DEPARTAMENTO":"Risaralda",
+    "MUNICIPIOS":"La Celia"
+  },
+  {
+    "DEPARTAMENTO":"Risaralda",
+    "MUNICIPIOS":"La Virginia"
+  },
+  {
+    "DEPARTAMENTO":"Risaralda",
+    "MUNICIPIOS":"Pereira"
+  },
+  {
+    "DEPARTAMENTO":"Risaralda",
+    "MUNICIPIOS":"Pueblo Rico"
+  },
+  {
+    "DEPARTAMENTO":"San Andrés y Providencia",
+    "MUNICIPIOS":"San Andrés"
+  },
+  {
+    "DEPARTAMENTO":"Santander",
+    "MUNICIPIOS":"Barrancabermeja"
+  },
+  {
+    "DEPARTAMENTO":"Santander",
+    "MUNICIPIOS":"Bucaramanga"
+  },
+  {
+    "DEPARTAMENTO":"Santander",
+    "MUNICIPIOS":"Cimitarra"
+  },
+  {
+    "DEPARTAMENTO":"Santander",
+    "MUNICIPIOS":"Landázuri"
+  },
+  {
+    "DEPARTAMENTO":"Santander",
+    "MUNICIPIOS":"Sabana de Torres"
+  },
+  {
+    "DEPARTAMENTO":"Santander",
+    "MUNICIPIOS":"Puerto Wilches"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIOS":"Colosó"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIOS":"Corozal"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIOS":"Coveñas"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIOS":"El Roble"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIOS":"Guaranda"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIOS":"Morroa"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIOS":"San Onofre"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIOS":"Santiago de Tolú"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIOS":"Sincelejo"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIOS":"Toluviejo"
+  },
+  {
+    "DEPARTAMENTO":"Tolima",
+    "MUNICIPIOS":"Cajamarca"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Andalucía"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Bolívar"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Bugalagrande"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Cali"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Calima El Darién"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Candelaria"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Cartago"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Dagua"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"El Águila"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"El Cairo"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"El Dovio"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Florida"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Guadalajara de Buga"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Jamundí"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"La Unión"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"La Victoria"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Obando"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Palmira"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Pradera"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Restrepo"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Riofrío"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Roldanillo"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"San Pedro"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Sevilla"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Toro"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Trujillo"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Tuluá"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Versalles"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Yotoco"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Yumbo"
+  },
+  {
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIOS":"Zarzal"
+  }
+]

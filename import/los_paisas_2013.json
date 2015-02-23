@@ -1,0 +1,54 @@
+[
+  {
+    "DEPARTAMENTO":"Atlántico",
+    "MUNICIPIO":"Barranquilla"
+  },
+  {
+    "DEPARTAMENTO":"Bolívar",
+    "MUNICIPIO":"Cartagena"
+  },
+  {
+    "DEPARTAMENTO":"Bolívar",
+    "MUNICIPIO":"Marialabaja"
+  },
+  {
+    "DEPARTAMENTO":"Córdoba",
+    "MUNICIPIO":"Montelíbano"
+  },
+  {
+    "DEPARTAMENTO":"Córdoba",
+    "MUNICIPIO":"Puerto Libertador"
+  },
+  {
+    "DEPARTAMENTO":"Distrito Capital",
+    "MUNICIPIO":"Bogotá"
+  },
+  {
+    "DEPARTAMENTO":"Magdalena",
+    "MUNICIPIO":"Santa Marta"
+  },
+  {
+    "DEPARTAMENTO":"San Andrés y Providencia",
+    "MUNICIPIO":"San Andrés"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIO":"Coveñas"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIO":"San Antonio de Palmito"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIO":"San Onofre"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIO":"Santiago de Tolú"
+  },
+  {
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIO":"Toluviejo"
+  }
+]
