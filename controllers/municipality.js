@@ -3,6 +3,7 @@ var _ = require('lodash');
 var Municipality = require('../models/Municipality');
 var async = require('async');
 var request = require('request');
+var topojson = require ('topojson');
 
 //url friendly name
 function convertToSlug(Text)
@@ -70,7 +71,9 @@ exports.getMunicipalyBoundary = function(req, res) {
           geojsonFeature.geometry = municipality.boundary;
           featuresMunicipalities.push(geojsonFeature);
       });
-      return res.jsonp(featuresMunicipalities);
+      var collection = {type: "FeatureCollection", features: featuresMunicipalities};
+      var topology = topojson.topology({collection: collection},{"property-transform":function(object){return object.properties;}});
+      return res.jsonp(topology);
     } else {
       res.status(400);
       return res.send(err);
@@ -137,12 +140,11 @@ exports.importMunicipaly = function (req,res){
 //Nominatim API returns a boundingbox property of the form:
 //[south Latitude, north Latitude, west Longitude, east Longitude]
 function convertBoundingBoxToGeoJSON(boundingBox){
-  var southLatitude = boundingBox[0];
-  var northLatitude = boundingBox[1];
-  var westLongitude = boundingBox[2];
-  var eastLongitude = boundingBox[3];
-  var geoJson = [[[[westLongitude,southLatitude],[westLongitude,northLatitude],[eastLongitude,northLatitude],[eastLongitude,southLatitude],[westLongitude,southLatitude]]]
-];
+  var southLatitude = parseFloat(boundingBox[0]);
+  var northLatitude = parseFloat(boundingBox[1]);
+  var westLongitude = parseFloat(boundingBox[2]);
+  var eastLongitude = parseFloat(boundingBox[3]);
+  var geoJson = [[[westLongitude,southLatitude],[westLongitude,northLatitude],[eastLongitude,northLatitude],[eastLongitude,southLatitude],[westLongitude,southLatitude]]];
   return geoJson;
 }
 /**
@@ -164,7 +166,6 @@ exports.enrichMunicipaly = function (req,res){
           url: 'http://nominatim.openstreetmap.org/search?q='+query+'&format=json&email=gagnonje@gmail.com&polygon_geojson=1&countrycodes=CO&limit=11',
           json: true
         };
-        console.log(options.url);
         request(options, function (error, response, body) {
           if (!error && response.statusCode == 200) {
 
@@ -187,12 +188,15 @@ exports.enrichMunicipaly = function (req,res){
                 return 0;
               }
             });
+            if (filteredBoundary.length<1 && filteredMunicipalityExactLocation.length<1){
+              console.log('Municipality: '+query+' does not have a specific location or boundary')
+              return callback();
+            }
             if (filteredMunicipalityExactLocation.length>=1){
               municipality.loc = {
                 type: 'Point',
                 coordinates:[parseFloat(filteredMunicipalityExactLocation[0].lon),parseFloat(filteredMunicipalityExactLocation[0].lat)]
               };
-              //console.log(municipality.loc);
             } else if (filteredBoundary.length<1){
               console.log('Municipality: '+query+' does not have a specific location');
             }
@@ -214,8 +218,8 @@ exports.enrichMunicipaly = function (req,res){
             } else if (filteredMunicipalityExactLocation.length>=1 && filteredMunicipalityExactLocation[0].boundingbox){
               //Getting bounding boxes if we dont have boundary, less precise and squary, but at least it gives us a surface
               console.log('Municipality: '+query+' does not have a boundary, using boundingBox instead');
-              municipality.boundary.type = filteredBoundary[0].geojson.type;
-              municipality.boundary.coordinates = filteredBoundary[0].geojson.coordinates;
+              municipality.boundary.type = 'Polygon';
+              municipality.boundary.coordinates = convertBoundingBoxToGeoJSON(filteredMunicipalityExactLocation[0].boundingbox);
             } else {
               console.log('Municipality: '+query+' does not have a boundary');
               if (municipality.osm_query){
