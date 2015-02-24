@@ -17,8 +17,13 @@ var municipalitySchema = new mongoose.Schema({
   boundary: {
     type: { type: String },
     coordinates: []
-  }
+  },
+  groups:[{ 
+      name: 'string',
+      year: 'string' 
+    }]
 });
+
 municipalitySchema.index({ boundary: '2dsphere' });
 //to avoid issue of saving a municipality without coordinates for boundary entered
 municipalitySchema.pre('save', function (next) {
@@ -26,6 +31,6 @@ municipalitySchema.pre('save', function (next) {
 		this.boundary = {};
 	}
 	next();
-})
+});
 
 module.exports = mongoose.model('Municipality', municipalitySchema);

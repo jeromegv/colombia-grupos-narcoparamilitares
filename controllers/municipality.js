@@ -104,6 +104,65 @@ exports.postMunicipality = function(req, res) {
   });
 };
 
+
+/**
+ * GET /merge
+ * Merge group name/year data with existing list of municipalities
+ */
+exports.mergeGroups = function (req,res){
+  var groups = require('../import/groups.json');
+
+  //for each group defined in our groups file
+  async.each(groups, function(group, callback) {
+    //load list of municipalities for each group
+    var groupMunicipalities = require('../import/'+group.filename);
+    //for each group municipality, we query mongo for the existing municipalities, 
+    //and we push the group name and year to it
+    async.each(groupMunicipalities, function(municipalityFromGroup, callbackDb) {
+      var municipalitySlug = convertToSlug(municipalityFromGroup.MUNICIPIO+'_'+municipalityFromGroup.DEPARTAMENTO);
+      Municipality.find({ slug: municipalitySlug }).select().exec(function(err, municipality) {
+        if (!err && municipality!==null && municipality.length>0){
+          municipality[0].groups.push({
+            name:group.name,
+            year:group.year
+          });
+          municipality[0].save(function(err) {
+            if (err) { 
+              console.log('Error with '+municipalitySlug);
+              return callbackDb(err);
+            } else {
+              return callbackDb();
+            }
+          });
+        //if a municipality exist in the group file but not in the master file
+        } else if (!err && (municipality[0]==null || municipality.length<1)){
+          console.log('Alert: municipality '+municipalitySlug+' from '+group.filename + ' NOT found');
+          return callbackDb();
+        } else {
+          return callbackDb(err);
+        }
+
+      });
+    }, function(err){
+      if( err ) {
+        return callback(err);
+      } else {
+        return callback(err);
+      }
+    });
+
+  }, function(err){
+      if( err ) {
+        console.log(err);
+        res.status(400);
+        return res.send(err);
+      } else {
+        res.status(200);
+        return res.send('merge completed');
+      }
+  });
+};
+
 /**
  * GET /import
  * Trigger a manual import of the data into the DB

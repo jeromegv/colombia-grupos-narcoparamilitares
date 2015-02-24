@@ -1,0 +1,47 @@
+[
+  {
+    "name":"Águilas Negras",
+    "year":"2013",
+    "filename":"aguilas_negras_2013.json"
+  },
+  {
+    "name":"Rastrojos",
+    "year":"2013",
+    "filename":"rastrojos_2013.json"
+  },
+  {
+    "name":"Bloque Meta",
+    "year":"2013",
+    "filename":"bloque_meta_2013.json"
+  },
+  {
+    "name":"Libertadores del Vichada",
+    "year":"2013",
+    "filename":"libertadores_del_vichada_2013.json"
+  },
+  {
+    "name":"Cordillera",
+    "year":"2013",
+    "filename":"cordillera_2013.json"
+  },
+  {
+    "name":"Los Machos",
+    "year":"2013",
+    "filename":"los_machos_2013.json"
+  },
+  {
+    "name":"Los Paisas",
+    "year":"2013",
+    "filename":"los_paisas_2013.json"
+  },
+  {
+    "name":"Renacer",
+    "year":"2013",
+    "filename":"renacer_2013.json"
+  },
+  {
+    "name":"Urabeños",
+    "year":"2013",
+    "filename":"urabenos_2013.json"
+  }
+]

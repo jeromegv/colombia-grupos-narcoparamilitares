@@ -35,6 +35,7 @@ app.use('/', routes);
 
 app.get('/enrich', municipalityController.enrichMunicipaly);
 app.get('/import', municipalityController.importMunicipaly);
+app.get('/merge', municipalityController.mergeGroups);
 app.get('/api/municipality', municipalityController.getMunicipality);
 app.get('/api/municipality/boundary', municipalityController.getMunicipalyBoundary);
 app.get('/api/municipality/:slug',municipalityController.getMunicipalitySlug);
