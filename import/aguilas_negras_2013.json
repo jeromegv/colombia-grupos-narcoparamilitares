@@ -1,158 +1,158 @@
 [
   {
-    "DEPARTAMENTOS":"Antioquia",
-    "MUNICIPIOS":"Medellín"
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIO":"Medellín"
   },
   {
-    "DEPARTAMENTOS":"Antioquia",
-    "MUNICIPIOS":"Rionegro"
+    "DEPARTAMENTO":"Antioquia",
+    "MUNICIPIO":"Rionegro"
   },
   {
-    "DEPARTAMENTOS":"Atlántico",
-    "MUNICIPIOS":"Barranquilla"
+    "DEPARTAMENTO":"Atlántico",
+    "MUNICIPIO":"Barranquilla"
   },
   {
-    "DEPARTAMENTOS":"Casanare",
-    "MUNICIPIOS":"Aguazul"
+    "DEPARTAMENTO":"Casanare",
+    "MUNICIPIO":"Aguazul"
   },
   {
-    "DEPARTAMENTOS":"Casanare",
-    "MUNICIPIOS":"Paz de Ariporo"
+    "DEPARTAMENTO":"Casanare",
+    "MUNICIPIO":"Paz de Ariporo"
   },
   {
-    "DEPARTAMENTOS":"Cauca",
-    "MUNICIPIOS":"Corinto"
+    "DEPARTAMENTO":"Cauca",
+    "MUNICIPIO":"Corinto"
   },
   {
-    "DEPARTAMENTOS":"Cesar",
-    "MUNICIPIOS":"Codazzi"
+    "DEPARTAMENTO":"Cesar",
+    "MUNICIPIO":"Codazzi"
   },
   {
-    "DEPARTAMENTOS":"Chocó",
-    "MUNICIPIOS":"El Carmen del Atrato"
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIO":"El Carmen del Atrato"
   },
   {
-    "DEPARTAMENTOS":"Chocó",
-    "MUNICIPIOS":"Istmina"
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIO":"Istmina"
   },
   {
-    "DEPARTAMENTOS":"Chocó",
-    "MUNICIPIOS":"Litoral de San Juan"
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIO":"Litoral de San Juan"
   },
   {
-    "DEPARTAMENTOS":"Chocó",
-    "MUNICIPIOS":"Medio Atrato"
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIO":"Medio Atrato"
   },
   {
-    "DEPARTAMENTOS":"Chocó",
-    "MUNICIPIOS":"Medio San Juan"
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIO":"Medio San Juan"
   },
   {
-    "DEPARTAMENTOS":"Chocó",
-    "MUNICIPIOS":"Quibdó"
+    "DEPARTAMENTO":"Chocó",
+    "MUNICIPIO":"Quibdó"
   },
   {
-    "DEPARTAMENTOS":"Córdoba",
-    "MUNICIPIOS":"Montería"
+    "DEPARTAMENTO":"Córdoba",
+    "MUNICIPIO":"Montería"
   },
   {
-    "DEPARTAMENTOS":"Córdoba",
-    "MUNICIPIOS":"Montelíbano"
+    "DEPARTAMENTO":"Córdoba",
+    "MUNICIPIO":"Montelíbano"
   },
   {
-    "DEPARTAMENTOS":"Córdoba",
-    "MUNICIPIOS":"Puerto Libertador"
+    "DEPARTAMENTO":"Córdoba",
+    "MUNICIPIO":"Puerto Libertador"
   },
   {
-    "DEPARTAMENTOS":"Córdoba",
-    "MUNICIPIOS":"Tierralta"
+    "DEPARTAMENTO":"Córdoba",
+    "MUNICIPIO":"Tierralta"
   },
   {
-    "DEPARTAMENTOS":"Córdoba",
-    "MUNICIPIOS":"Valencia"
+    "DEPARTAMENTO":"Córdoba",
+    "MUNICIPIO":"Valencia"
   },
   {
-    "DEPARTAMENTOS":"Cundinamarca",
-    "MUNICIPIOS":"Soacha"
+    "DEPARTAMENTO":"Cundinamarca",
+    "MUNICIPIO":"Soacha"
   },
   {
-    "DEPARTAMENTOS":"Distrito Capital",
-    "MUNICIPIOS":"Bogotá"
+    "DEPARTAMENTO":"Distrito Capital",
+    "MUNICIPIO":"Bogotá"
   },
   {
-    "DEPARTAMENTOS":"Huila",
-    "MUNICIPIOS":"Rivera"
+    "DEPARTAMENTO":"Huila",
+    "MUNICIPIO":"Rivera"
   },
   {
-    "DEPARTAMENTOS":"Huila",
-    "MUNICIPIOS":"Saladoblanco"
+    "DEPARTAMENTO":"Huila",
+    "MUNICIPIO":"Saladoblanco"
   },
   {
-    "DEPARTAMENTOS":"Magdalena",
-    "MUNICIPIOS":"Santa Marta"
+    "DEPARTAMENTO":"Magdalena",
+    "MUNICIPIO":"Santa Marta"
   },
   {
-    "DEPARTAMENTOS":"Meta",
-    "MUNICIPIOS":"El Castillo"
+    "DEPARTAMENTO":"Meta",
+    "MUNICIPIO":"El Castillo"
   },
   {
-    "DEPARTAMENTOS":"Nariño",
-    "MUNICIPIOS":"Cumbitara"
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIO":"Cumbitara"
   },
   {
-    "DEPARTAMENTOS":"Nariño",
-    "MUNICIPIOS":"El Rosario"
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIO":"El Rosario"
   },
   {
-    "DEPARTAMENTOS":"Nariño",
-    "MUNICIPIOS":"Leiva"
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIO":"Leiva"
   },
   {
-    "DEPARTAMENTOS":"Nariño",
-    "MUNICIPIOS":"Los Andes"
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIO":"Los Andes"
   },
   {
-    "DEPARTAMENTOS":"Nariño",
-    "MUNICIPIOS":"Maguí Payán"
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIO":"Maguí Payán"
   },
   {
-    "DEPARTAMENTOS":"Nariño",
-    "MUNICIPIOS":"Olaya Herrera"
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIO":"Olaya Herrera"
   },
   {
-    "DEPARTAMENTOS":"Nariño",
-    "MUNICIPIOS":"Policarpa"
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIO":"Policarpa"
   },
   {
-    "DEPARTAMENTOS":"Nariño",
-    "MUNICIPIOS":"Tumaco"
+    "DEPARTAMENTO":"Nariño",
+    "MUNICIPIO":"Tumaco"
   },
   {
-    "DEPARTAMENTOS":"Norte de Santander",
-    "MUNICIPIOS":"Teorama"
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIO":"Teorama"
   },
   {
-    "DEPARTAMENTOS":"Norte de Santander",
-    "MUNICIPIOS":"Tibú"
+    "DEPARTAMENTO":"Norte de Santander",
+    "MUNICIPIO":"Tibú"
   },
   {
-    "DEPARTAMENTOS":"Sucre",
-    "MUNICIPIOS":"Coveñas"
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIO":"Coveñas"
   },
   {
-    "DEPARTAMENTOS":"Sucre",
-    "MUNICIPIOS":"San Onofre"
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIO":"San Onofre"
   },
   {
-    "DEPARTAMENTOS":"Sucre",
-    "MUNICIPIOS":"Santiago de Tolú"
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIO":"Santiago de Tolú"
   },
   {
-    "DEPARTAMENTOS":"Sucre",
-    "MUNICIPIOS":"Sincelejo"
+    "DEPARTAMENTO":"Sucre",
+    "MUNICIPIO":"Sincelejo"
   },
   {
-    "DEPARTAMENTOS":"Valle",
-    "MUNICIPIOS":"Buenaventura"
+    "DEPARTAMENTO":"Valle",
+    "MUNICIPIO":"Buenaventura"
   }
 ]
