@@ -12,7 +12,6 @@ mongoose.connection.on('error', function() {
   console.error('MongoDB Connection Error. Make sure MongoDB is running.');
 });
 
-var routes = require('./routes/index');
 var municipalityController = require('./controllers/municipality');
 
 
@@ -31,7 +30,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-app.use('/', routes);
+app.get('/', municipalityController.getHomepage);
 
 app.get('/enrich', municipalityController.enrichMunicipaly);
 app.get('/import', municipalityController.importMunicipaly);

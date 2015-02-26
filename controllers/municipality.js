@@ -15,6 +15,10 @@ function convertToSlug(Text)
       ;
 }
 
+exports.getHomepage = function(req, res) {
+  res.render('index', { title: 'Presence of Narcoparamilitary Groups' });
+};
+
 /**
  * GET /api/municipality
  * List of all municipalities
