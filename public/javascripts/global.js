@@ -1,12 +1,37 @@
+//TODO: bootstrap, checkbox next to map, "all" selection, think of how year data should be presented
 // DOM Ready =============================================================
 $(document).ready(function() {
 
-	$.getJSON('/api/municipality/boundary', function(data) {
-	    var geojson = L.geoJson(data, {
-	      onEachFeature: function (feature, layer) {
-	        layer.bindPopup(feature.properties.name+', '+feature.properties.department);
+	L.TopoJSON = L.GeoJSON.extend({  
+	  addData: function(jsonData) {
+	  	this.options.onEachFeature = function (feature, layer) {
+	  		var popupContent = '<b>'+feature.properties.name+', '+feature.properties.department+'</b><br/>'
+	  		_.forEach(feature.properties.groups, function(group, key) {
+			  popupContent = popupContent + group.name + ', ' + group.year + '<br/>';
+			});
+	    	layer.bindPopup(popupContent);
+	    };
+	    if (jsonData.type === "Topology") {
+	      for (key in jsonData.objects) {
+	        geojson = topojson.feature(jsonData, jsonData.objects[key]);
+	        L.GeoJSON.prototype.addData.call(this, geojson);
 	      }
-	    });
+	    } else {
+	      L.GeoJSON.prototype.addData.call(this, jsonData);
+	    }
+	  }
+	});
+
+	var topoLayer = new L.TopoJSON();
+
+	var allMunicipalities;
+	var allMunicipalitiesFiltered;
+
+	$.getJSON('/api/municipality/boundary', function(data) {
+		allMunicipalities = topojson.feature(data, data.objects['collection']);
+		allMunicipalitiesFiltered = allMunicipalities.features;
+		topoLayer.addData(allMunicipalities);
+
 	    var map = L.map('map', {
 	        minZoom: 5
 	    });
@@ -16,8 +41,33 @@ $(document).ready(function() {
 		}).addTo(map);
 		L.Icon.Default.imagePath = '/components/leaflet/dist/images/';
 
-	    geojson.addTo(map);
+  		topoLayer.addTo(map);
 	});
+
+	window.updateMap = function(){
+		if (allMunicipalities){
+			var checked = []
+			$("input[name='groups[]']:checked").each(function ()	
+			{
+			    checked.push($(this).val());
+			});
+			allMunicipalitiesFiltered = _.filter(allMunicipalities.features, function(municipality) {
+				var found = false;
+				_.forEach(municipality.properties.groups, function(group, key) {
+					if (_.indexOf(checked, group.name)!==-1){
+						found = true;
+						return true;
+					}
+				});
+				return found;
+			});
+			topoLayer.clearLayers();
+			topoLayer.addData({
+				'type':'FeatureCollection',
+				'features':allMunicipalitiesFiltered
+			});
+		}
+	};
    
 
 });

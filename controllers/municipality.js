@@ -4,6 +4,8 @@ var Municipality = require('../models/Municipality');
 var async = require('async');
 var request = require('request');
 var topojson = require ('topojson');
+//where we store definition of all groups and all years that we have 
+var groups = require('../import/groups.json');
 
 //url friendly name
 function convertToSlug(Text)
@@ -16,7 +18,10 @@ function convertToSlug(Text)
 }
 
 exports.getHomepage = function(req, res) {
-  res.render('index', { title: 'Presence of Narcoparamilitary Groups' });
+  res.render('index', { 
+    title: 'Presence of Narcoparamilitary Groups in Colombia' ,
+    groups: groups
+  });
 };
 
 /**
@@ -61,15 +66,16 @@ exports.getMunicipalitySlug = function(req, res) {
  */
 
 exports.getMunicipalyBoundary = function(req, res) {
-  Municipality.find({boundary: {'$ne': null }}).select('boundary name department').exec(function(err, municipalities) {
+  Municipality.find({boundary: {'$ne': null }}).select('boundary name department groups').exec(function(err, municipalities) {
     if (!err && municipalities!==null){
       var featuresMunicipalities =[];
-      _.forEach(municipalities, function(municipality, key) {        
+      _.forEach(municipalities, function(municipality, key) {     
           var geojsonFeature = {
               'type': 'Feature',
               'properties': {
                   'name': municipality.name,
-                  'department': municipality.department
+                  'department': municipality.department,
+                  'groups': municipality.groups
               }
           };
           geojsonFeature.geometry = municipality.boundary;
@@ -114,7 +120,6 @@ exports.postMunicipality = function(req, res) {
  * Merge group name/year data with existing list of municipalities
  */
 exports.mergeGroups = function (req,res){
-  var groups = require('../import/groups.json');
 
   //for each group defined in our groups file
   async.each(groups, function(group, callback) {
