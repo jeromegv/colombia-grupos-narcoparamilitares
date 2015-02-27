@@ -6,6 +6,7 @@ var request = require('request');
 var topojson = require ('topojson');
 //where we store definition of all groups and all years that we have 
 var groups = require('../import/groups.json');
+var fs = require('fs');
 
 //url friendly name
 function convertToSlug(Text)
@@ -83,6 +84,13 @@ exports.getMunicipalyBoundary = function(req, res) {
       });
       var collection = {type: "FeatureCollection", features: featuresMunicipalities};
       var topology = topojson.topology({collection: collection},{"property-transform":function(object){return object.properties;}});
+      //save the output of this query to a JSON file (to use it in an app that does not depend on this API)
+      if (req.query.savetodisk){
+        fs.writeFile('./public/json/municipios.json', JSON.stringify(topology), function (err) {
+          if (err) return console.log(err);
+          console.log('File saved to disk');
+        });
+      }
       return res.jsonp(topology);
     } else {
       res.status(400);
