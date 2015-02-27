@@ -1,4 +1,4 @@
-//TODO: bootstrap, checkbox next to map, "all" selection, think of how year data should be presented
+//TODO: bootstrap, checkbox next to map, think of how year data should be presented, deploy to heroku
 // DOM Ready =============================================================
 $(document).ready(function() {
 
@@ -44,23 +44,41 @@ $(document).ready(function() {
   		topoLayer.addTo(map);
 	});
 
-	window.updateMap = function(){
+	window.updateMap = function(pressedAll){
 		if (allMunicipalities){
-			var checked = []
-			$("input[name='groups[]']:checked").each(function ()	
-			{
-			    checked.push($(this).val());
-			});
-			allMunicipalitiesFiltered = _.filter(allMunicipalities.features, function(municipality) {
-				var found = false;
-				_.forEach(municipality.properties.groups, function(group, key) {
-					if (_.indexOf(checked, group.name)!==-1){
-						found = true;
-						return true;
-					}
+			if (pressedAll){
+				//someone CHECKED the all button
+				if ("input[name='all']:checked"){
+					allMunicipalitiesFiltered = allMunicipalities.features;
+					$("input[name='groups[]']").each(function (){
+						 $( this ).prop('checked', true);
+					});
+				}
+			} else {
+				var checked = []
+				$("input[name='groups[]']:checked").each(function ()	
+				{
+				    checked.push($(this).val());
 				});
-				return found;
-			});
+				if (checked.length<9&&checked.length>0){
+					//only some groups are selected, filter the points
+					$("input[name='all']").prop('checked', false);
+					allMunicipalitiesFiltered = _.filter(allMunicipalities.features, function(municipality) {
+						var found = false;
+						_.forEach(municipality.properties.groups, function(group, key) {
+							if (_.indexOf(checked, group.name)!==-1){
+								found = true;
+								return true;
+							}
+						});
+						return found;
+					});
+				} else {
+					//either all groups are selected or no groups are selected
+					$("input[name='all']").prop('checked', true);
+					allMunicipalitiesFiltered = allMunicipalities.features;
+				}
+			}
 			topoLayer.clearLayers();
 			topoLayer.addData({
 				'type':'FeatureCollection',

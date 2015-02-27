@@ -3,8 +3,12 @@ extends layout
 block content
     h1= title
     div(id='map')
+    div(class="checkbox")
+        label
+            input(type="checkbox" name="all" value='all' onclick="updateMap(true)" checked=true) 
+            |All
     for group in groups
         div(class="checkbox")
             label
-                input(type="checkbox" name="groups[]" value=group.name onclick="updateMap()" checked=true) 
+                input(type="checkbox" name="groups[]" value=group.name onclick="updateMap(false)" checked=false) 
                 |#{group.name}
