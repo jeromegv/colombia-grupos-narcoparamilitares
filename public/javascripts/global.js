@@ -27,7 +27,7 @@ $(document).ready(function() {
 	var allMunicipalities;
 	var allMunicipalitiesFiltered;
 
-	//$.getJSON('json/municipios.json', function(data) {
+	//$.getJSON('json/municipios.topojson', function(data) {
 	$.getJSON('/api/municipality/boundary', function(data) {
 		allMunicipalities = topojson.feature(data, data.objects['collection']);
 		allMunicipalitiesFiltered = allMunicipalities.features;
