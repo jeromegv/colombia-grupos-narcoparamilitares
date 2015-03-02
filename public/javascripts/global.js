@@ -43,6 +43,7 @@ $(document).ready(function() {
 		L.Icon.Default.imagePath = '/components/leaflet/dist/images/';
 
   		topoLayer.addTo(map);
+  		$('#count').text(_.size(allMunicipalitiesFiltered));
 	});
 
 	window.updateMap = function(pressedAll){
@@ -85,6 +86,7 @@ $(document).ready(function() {
 				'type':'FeatureCollection',
 				'features':allMunicipalitiesFiltered
 			});
+			$('#count').text(_.size(allMunicipalitiesFiltered));
 		}
 	};
    

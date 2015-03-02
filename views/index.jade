@@ -3,6 +3,9 @@ extends layout
 block content
     h1= title
     div(id='map')
+    p 
+    span(id='count')
+    |  Municipalities
     div(class="checkbox")
         label
             input(type="checkbox" name="all" value='all' onclick="updateMap(true)" checked=true) 
