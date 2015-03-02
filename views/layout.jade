@@ -1,13 +1,14 @@
 doctype html
 html
     head
+        meta(charset='utf-8')
         title= title
-        link(rel='stylesheet', href='/stylesheets/style.css')
-        link(rel='stylesheet' href='/components/leaflet/dist/leaflet.css')
+        link(rel='stylesheet', href=path+'/stylesheets/style.css')
+        link(rel='stylesheet' href=path+'/components/leaflet/dist/leaflet.css')
     body
         block content
-        script(src='/components/jquery/dist/jquery.min.js')
-        script(src='/components/leaflet/dist/leaflet.js')
-        script(src='/components/topojson/topojson.js')
-        script(src='/components/lodash/lodash.min.js')
-        script(src='/javascripts/global.js')
+        script(src=path+'/components/jquery/dist/jquery.min.js')
+        script(src=path+'/components/leaflet/dist/leaflet.js')
+        script(src=path+'/components/topojson/topojson.js')
+        script(src=path+'/components/lodash/lodash.min.js')
+        script(src=path+'/javascripts/global.js')

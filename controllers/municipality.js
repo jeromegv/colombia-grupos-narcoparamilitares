@@ -21,7 +21,8 @@ function convertToSlug(Text)
 exports.getHomepage = function(req, res) {
   res.render('index', { 
     title: 'Presence of Narcoparamilitary Groups in Colombia' ,
-    groups: groups
+    groups: groups,
+    path : ''
   });
 };
 
