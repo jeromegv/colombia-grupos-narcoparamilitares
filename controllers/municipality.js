@@ -86,7 +86,7 @@ exports.getMunicipalyBoundary = function(req, res) {
       var topology = topojson.topology({collection: collection},{"property-transform":function(object){return object.properties;}});
       //save the output of this query to a JSON file (to use it in an app that does not depend on this API)
       if (req.query.savetodisk){
-        fs.writeFile('./public/json/municipios.json', JSON.stringify(topology), function (err) {
+        fs.writeFile('./public/json/municipios.topojson', JSON.stringify(topology), function (err) {
           if (err) return console.log(err);
           console.log('File saved to disk');
         });
