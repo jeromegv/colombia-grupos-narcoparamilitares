@@ -10,7 +10,8 @@ module.exports = function(grunt) {
                       // Return an object of data to pass to templates
                       return {
                         groups:require('./import/groups.json'),
-                        path:'public'
+                        path:'public',
+                        title:'Presence of Narcoparamilitary Groups in Colombia'
                       };
                     }
                 },
