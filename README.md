@@ -1,3 +1,5 @@
+This app is available on http://www.gagnonvoyer.com/colombia-grupos-narcoparamilitares
+
 `export NODE_ENV=development`
 
 Launch mongodb locally
